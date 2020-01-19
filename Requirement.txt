@@ -1,0 +1,7 @@
+Requirement 
+
+Java : jdk1.8.0_221 Version
+
+Chrome.exe : version 79
+
+Eclipe has to be installed.
