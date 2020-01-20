@@ -1,6 +1,11 @@
 # Plivo_Assignment_Explanation
 Explantion:
-
+Folder Structure : 
+AppBase class path      : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\base\AppBase
+Config file             : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\config\
+CreatNewpage            : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\reusables
+Messaging               : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\reusables
+FuseCreateApp(Main Class): Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\scripts
 First I have create the Project folder called "fuseapp"
 
 In that I have created the FuseCreate.Java(Main class) : Where it extends "AppBase" and also it has intialization , Messaging , CreateNewpage classes.
