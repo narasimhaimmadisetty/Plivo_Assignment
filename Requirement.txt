@@ -1,5 +1,5 @@
-Requirement 
-
+Requirement : To write the code for Drag and Drop in UI.
+Prerequisites:
 Java : jdk1.8.0_221 Version
 
 Chrome.exe : version 79
