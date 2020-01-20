@@ -6,22 +6,28 @@ Config file             : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\
 CreatNewpage            : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\reusables
 Messaging               : Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\reusables
 FuseCreateApp(Main Class): Fuseapp-Workspace\quickfuse\fuseapp\src\com\quickfuse\modules\scripts
+
+
 First I have create the Project folder called "fuseapp"
+AppBase.java  : It is the base class for the project whete it has Configured Properties file(Path) and Driver/Browser related details
 
-In that I have created the FuseCreate.Java(Main class) : Where it extends "AppBase" and also it has intialization , Messaging , CreateNewpage classes.
-AppBase.java  : It has Config Properties file(Path) and Browser related details
+I have created the FuseCreateApp.Java(Main class) : To execute the project ,Where it extends "AppBase" and also it has intialization , Messaging , CreateNewpage classes.
 
-CreatNewpage.java : It has all the locators written.
+Config.Properties file where all the details like browser, url, test data to be passed in different functionalities are written(For Demo purpose I kept test dat ain properties file but it should be in data driven where we should call test data from excel).
 
-Config.Properties file where all the details like browser, url, test to be passed in tabs are written.
+There are two types of packages one is "reusable package" and another one is "Scripts Package"
+Under Reusable package I created,
+CreatNewpage.java : It has all the Page locators written.
 
-Messaging.Java : I created two classes called " CreatNewpage" and "Send Email" classes where it will perfom all page related operations.
+Messaging.Java : I created reusable class where I written two methods " CreatNewpage" and "Send Email"  where it will perfom all page related operations or functionalities.
+Under Scripts Package I created a class called 
+FuseCreateApp.java  where it has the following methods.
 
-In FuseCreateApp.java I created a class called "FuseCreateApp" where it has the following methods.
+i . FuseCreateApp Constructor 
+Where it configured property file. Then
+Intialization(): It will intialize the browser(I used chrome driver)  and driver for rest of all calling functionalities 
 
-i . Intialization(): It will intialize the browser I used chrome driver for browser.
-
-ii: Messaging(): In this where we create the new page and send email operations.
+ii: Messaging(): In this we are calling all the functions(Execution methods)
 
 A. After opening the browser I opened quickfuseapp page by using the URL
 
