@@ -17,7 +17,7 @@ public class AppBase {
 		try {
 			configProp = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\135193\\eclipse-workspace\\Narsi\\quickfuse\\fuseapp\\src\\com\\quickfuse\\config\\config.properties");
+					System.getProperty("user.dir") + "\\src\\com\\quickfuse\\config\\config.properties");
 			configProp.load(ip);
 
 		} catch (FileNotFoundException e) {
@@ -31,8 +31,7 @@ public class AppBase {
 		String browserName = configProp.getProperty("browser");
 		System.out.println(browserName);
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", configProp.getProperty("chromedriverpath"));
 
 			driver = new ChromeDriver();
 		}
